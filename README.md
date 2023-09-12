@@ -6,3 +6,4 @@
 * plane faster
 * death animation added to enemy
 * added points, and difficulty
+* added difficulty function

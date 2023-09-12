@@ -46,8 +46,8 @@ function treff(){
 
 function death(){
 	//Death animation play
-	const epleElement = document.getElementById('eple');
-	epleElement.style.cssText += 'animation-name: hpdown; animation-duration:'+ death_animation_time/1000 +'s; animation-iteration-count: 1; transition: 0s';	
+	const apple_style = document.getElementById('eple');
+	apple_style.style.cssText += 'animation-name: hpdown; animation-duration:'+ death_animation_time/1000 +'s; animation-iteration-count: 1; transition: 0s';	
 }
 function reincarnation(){
 	deathstyle = "";
