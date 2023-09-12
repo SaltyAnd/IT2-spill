@@ -30,6 +30,7 @@ function treff(){
 		document.getElementById("poengvisning").innerHTML = poengsum;
 		console.log("treff registrert");
 		console.log(flyposX, flyposY, epleposX, epleposY);
+		epleflytt();
 	}
 	
 	//salert ("test");
