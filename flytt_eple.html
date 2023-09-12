@@ -1,0 +1,27 @@
+<html>
+<!--Et eple som flytter seg tilfeldig.-->
+<head>
+<style>
+#eple {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100px;
+	height:100px;
+	}
+</style>
+<script>
+	var posX=0;
+	var posY=0;
+	function epleflytt() {
+		posX = Math.random() *(innerWidth-100);
+		posY = Math.random() *(innerHeight - 100);
+		eple.style.left = posX + "px";
+		eple.style.top = posY + "px";
+	}
+</script>
+</head>
+<body>
+<img id="eple" src="eple.jpg" onclick="epleflytt()">
+</body>
+</html>
