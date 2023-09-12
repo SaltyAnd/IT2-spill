@@ -14,3 +14,9 @@ body {
 #fly {
 	transition: 0.002s;
 }
+#poengvisning {
+	position: absolute;
+	top: 2vh;
+	left: 50vw;
+	font-size: 5vw;
+}
