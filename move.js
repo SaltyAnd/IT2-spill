@@ -29,7 +29,7 @@ function testmove(hendelse){
 	}
 function moveleft() {
 	element.style.transform = "scaleX(-1)";
-	element.style.left = parseInt(element.style.left)-5+"px";
+	element.style.left = parseInt(element.style.left)-10+"px";
 
 }
 
