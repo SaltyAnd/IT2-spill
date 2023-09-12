@@ -28,7 +28,7 @@ function testmove(hendelse){
 		}
 	}
 function moveleft() {
-	element.style.transform = "rotate(180deg)";
+	element.style.transform = "scaleX(-1)";
 	element.style.left = parseInt(element.style.left)-10+"px";
 }
 
