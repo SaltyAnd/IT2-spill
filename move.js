@@ -28,23 +28,24 @@ function testmove(hendelse){
 		}
 	}
 function moveleft() {
-	element.style.transform = "rotate(180deg)";
+	element.style.transform = "scaleX(-1)";
 	element.style.left = parseInt(element.style.left)-5+"px";
+
 }
 
 function moveup() {
 	element.style.transform = "rotate(270deg)";
-	element.style.top = parseInt(element.style.top)-5+"px";
+	element.style.top = parseInt(element.style.top)-10+"px";
 }
 
 function moveright() {
 	element.style.transform = "rotate(0deg)";
-	element.style.left = parseInt(element.style.left)+5+"px";
+	element.style.left = parseInt(element.style.left)+10+"px";
 }
 
 function movedown() {
 	element.style.transform = "rotate(90deg)";
-	element.style.top = parseInt(element.style.top)+5+"px";
+	element.style.top = parseInt(element.style.top)+10+"px";
 }
 
 function testtreff() {
