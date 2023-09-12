@@ -12,6 +12,7 @@ body {
 	transition: 0.5s;
 }
 
+/*Death hanimation*/
 
 @keyframes hpdown {
 	0% {
@@ -19,19 +20,22 @@ body {
 	}
 	25%{
 		transform:translate(20px,20px);
-		filter:hue-rotate(270deg);
-		
+		filter:hue-rotate(270deg);		
+	}
+	30%{
+		transform:translate(+40px, -40px);
 	}
 	50% {
 		transform:translate(-40px, 20px);
-		filter:hue-rotate(365deg);
+		filter:hue-rotate(365deg);		
 	}
 	100%{
-		filter:hue-rotate(0deg);
-		
+		filter:hue-rotate(0deg);		
 	}
-
 }
+/*Death hanimation*/
+
+
 #fly {
 	transition: 0.002s;
 }

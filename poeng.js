@@ -31,7 +31,7 @@ function treff(){
 		document.getElementById("poengvisning").innerHTML = poengsum;
 		console.log("treff registrert");
 		console.log(flyposX, flyposY, epleposX, epleposY);
-		epleflytt();
+	
 		
 		//Death animation. Yes i do know this is overcomplicated and broken, but whatever
 		death();
@@ -42,18 +42,16 @@ function treff(){
 		
 	}
 	
-	//salert ("test");
-	//finn pos. til fly.
-	//finn pos til eple.
-	//sammenlikne pos.
 }
 
 function death(){
-	deathstyle = "animation-name: hpdown; animation-duration: 1s; animation-iteration-count: 1;";
-	document.getElementById("eple").style =deathstyle;
-	
+	//Death animation play
+	const epleElement = document.getElementById('eple');
+	epleElement.style.cssText += 'animation-name: hpdown; animation-duration:'+ death_animation_time/1000 +'s; animation-iteration-count: 1; transition: 0s';	
 }
 function reincarnation(){
-	deathstyle = "animation-name:NULL; animation-duration: 1s; animation-iteration-count: 0;";
+	deathstyle = "";
 	document.getElementById("eple").style =deathstyle;
+	epleflytt();
+	//Death stop, run ai again
 }
