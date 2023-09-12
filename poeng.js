@@ -3,6 +3,7 @@ var flyposY;
 var epleposX;
 var epleposY;
 var poengsum = 0;
+var death_animation_time = 1000; //1 second
 
 
 function treff(){
@@ -31,10 +32,28 @@ function treff(){
 		console.log("treff registrert");
 		console.log(flyposX, flyposY, epleposX, epleposY);
 		epleflytt();
+		
+		//Death animation. Yes i do know this is overcomplicated and broken, but whatever
+		death();
+		setTimeout(function(){
+			reincarnation();
+		},death_animation_time);
+
+		
 	}
 	
 	//salert ("test");
 	//finn pos. til fly.
 	//finn pos til eple.
 	//sammenlikne pos.
+}
+
+function death(){
+	deathstyle = "animation-name: hpdown; animation-duration: 1s; animation-iteration-count: 1;";
+	document.getElementById("eple").style =deathstyle;
+	
+}
+function reincarnation(){
+	deathstyle = "animation-name:NULL; animation-duration: 1s; animation-iteration-count: 0;";
+	document.getElementById("eple").style =deathstyle;
 }

@@ -11,6 +11,27 @@ body {
 	height: 100px;
 	transition: 0.5s;
 }
+
+
+@keyframes hpdown {
+	0% {
+		filter:hue-rotate(0deg);
+	}
+	25%{
+		transform:translate(20px,20px);
+		filter:hue-rotate(270deg);
+		
+	}
+	50% {
+		transform:translate(-40px, 20px);
+		filter:hue-rotate(365deg);
+	}
+	100%{
+		filter:hue-rotate(0deg);
+		
+	}
+
+}
 #fly {
 	transition: 0.002s;
 }
