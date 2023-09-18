@@ -1,8 +1,6 @@
 const eple = document.getElementById("eple");
 
-var current_points = poengsum;
-var difficulty_level = 0;
-var max_time_delay = 5000;
+const max_time_delay = 5000;
 
 function start() {
 	eple.style.left = (innerWidth/2) + "px";
@@ -15,63 +13,58 @@ function epleflytt() {
 }
 
 
-function AI_difficulty(current_points, difficulty_level, max_time_delay){
+function AI_difficulty(current_points, max_time_delay){
 	//Difficulty level: 0 = Easy |  1 = Normal | 2 = Hard | 3 = Unplayeable
 	//Difficulty level 0 does not change speed of apple
 
 	//Easy
-	if(difficulty_level == 0 ){
-		return max_time_delay; 
+	if(current_points < 2){
+		setInterval(epleflytt,max_time_delay);
 	}
 
-	//Normal 
-	else if (difficulty_level == 1 ){
-		if(current_points > 5){
-			return max_time_delay - 50;
-		}
-		else if(current_points >= 10){
-			return max_time_delay - 200;
-		}
-		else if(current_points >= 15){
-			return max_time_delay - 500; 
-		}
-		else if(current_points >= 25){
-			return max_time_delay - 800;
-		}
+	//Normal
+	if(current_points >= 2){
+		setInterval(epleflytt,max_time_delay - 50);
+	}
+	else if(current_points >= 4){
+		setInterval(epleflytt,max_time_delay - 100);
+	}
+	else if(current_points >= 6){
+		setInterval(epleflytt,max_time_delay - 200);
+	}
+	else if(current_points >= 8){
+		setInterval(epleflytt,max_time_delay - 400);
 	}
 	
 	//Hard
-	else if (difficulty_level == 2){
-		if(current_points > 5){
-			return max_time_delay - 100;
-		}
-		else if(current_points >= 10){
-			return max_time_delay - 400;
-		}
-		else if(current_points >= 15){
-			return max_time_delay - 800; 
-		}
-		else if(current_points >= 25){
-			return max_time_delay - 1200;
-		}
+	if(current_points >= 10){
+		setInterval(epleflytt,max_time_delay - 600);
+	}
+	else if(current_points >= 12){
+		setInterval(epleflytt,max_time_delay - 800);
+	}
+	else if(current_points >= 14){
+		setInterval(epleflytt,max_time_delay - 1000);
+	}
+	else if(current_points >= 16){
+		setInterval(epleflytt,max_time_delay - 1200);
+	}
+	else if(current_points >= 18){
+		setInterval(epleflytt,max_time_delay - 1400);
 	}
 
 	//Unplayeable
-	else if (difficulty_level == 3){
-		if(current_points > 5){
-			return max_time_delay - 400;
-		}
-		else if(current_points >= 10){
-			return max_time_delay - 800;
-		}
-		else if(current_points >= 15){
-			return max_time_delay - 1600; 
-		}
-		else if(current_points >= 25){
-			return max_time_delay - 3200;
-		}
+	if(current_points >= 20){
+		setInterval(epleflytt,max_time_delay - 1600);
 	}
-	
-	setInterval(epleflytt,max_time_delay);
+	else if(current_points >= 22){
+		setInterval(epleflytt,max_time_delay - 1800);
+	}
+	else if(current_points >= 24){
+		setInterval(epleflytt,max_time_delay - 2000);
+	}
+	else if(current_points >= 25){
+		return max_time_delay - 2500;
+	}
 }
 

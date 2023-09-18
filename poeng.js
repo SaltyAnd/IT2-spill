@@ -20,6 +20,7 @@ function treff(){
 		console.log("treff registrert");
 		console.log(flyposX, flyposY, epleposX, epleposY);
 	
+		AI_difficulty(poengsum, max_time_delay);
 		
 		//Death animation. Yes i do know this is overcomplicated and broken, but whatever
 		death();
