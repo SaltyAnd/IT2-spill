@@ -36,7 +36,7 @@ function treff(){
 		//Death animation. Yes i do know this is overcomplicated and broken, but whatever
 		death();
 		setTimeout(function(){
-			reincarnation();
+			reincarnation();			
 		},death_animation_time);
 
 		
@@ -47,11 +47,14 @@ function treff(){
 function death(){
 	//Death animation play
 	const apple_style = document.getElementById('eple');
-	apple_style.style.cssText += 'animation-name: hpdown; animation-duration:'+ death_animation_time/1000 +'s; animation-iteration-count: 1; transition: 0s';	
+	apple_style.style.cssText += 'animation-name: hpdown; animation-duration:'+ death_animation_time/1000 +'s; animation-iteration-count: 1; transition: 0s';
+	eple.style.left = Math.floor(Math.random()*(innerWidth - 200)) + 50 +"px";
+	eple.style.top = Math.floor(Math.random()*(innerHeight - 200)) + 100 +"px";	
+	
 }
 function reincarnation(){
-	deathstyle = "";
-	document.getElementById("eple").style =deathstyle;
-	epleflytt();
+	const apple_style = document.getElementById('eple');
+	apple_style.style.cssText += 'animation-name: null; transition: 0.5s';
+	
 	//Death stop, run ai again
 }
