@@ -1,5 +1,9 @@
 const eple = document.getElementById("eple");
 
+var current_points = poengsum;
+var difficulty_level = 0;
+var max_time_delay = 5000;
+
 function start() {
 	eple.style.left = (innerWidth/2) + "px";
 	eple.style.top = (innerHeight/2) + "px";
@@ -9,6 +13,7 @@ function epleflytt() {
 	eple.style.left = Math.floor(Math.random()*(innerWidth - 200)) + 50 +"px";
 	eple.style.top = Math.floor(Math.random()*(innerHeight - 200)) + 50 +"px";
 }
+
 
 function AI_difficulty(current_points, difficulty_level, max_time_delay){
 	//Difficulty level: 0 = Easy |  1 = Normal | 2 = Hard | 3 = Unplayeable
@@ -66,5 +71,7 @@ function AI_difficulty(current_points, difficulty_level, max_time_delay){
 			return max_time_delay - 3200;
 		}
 	}
+	
+	setInterval(epleflytt,max_time_delay);
 }
 
