@@ -16,7 +16,6 @@ body {
 	left: 0;
 	width: 100px;
 	height: 100px;
-	
 	z-index:var(--z-upper);
 	/*transition: 0.5s;*/
 	z-index:22; 
