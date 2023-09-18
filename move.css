@@ -80,7 +80,7 @@ body {
 }
 #poengvisning {
 	position: relative;
-	top: 2vh;
+	top: -25px;
 	left: 50vw;
 	font-size: 5vw;
 	z-index:var(--z-middle);
