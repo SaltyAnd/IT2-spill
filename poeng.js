@@ -3,7 +3,7 @@ var flyposY;
 var epleposX;
 var epleposY;
 var poengsum = 0;
-var death_animation_time = 2500; //1 second
+var death_animation_time = 1000; //1 second
 
 
 function treff(){
@@ -53,8 +53,8 @@ function death(){
 	
 }
 function reincarnation(){
-	deathstyle = "";
-	document.getElementById("eple").style =deathstyle;
+	const apple_style = document.getElementById('eple');
+	apple_style.style.cssText += 'animation-name: null; transition: 0.5s';
 	
 	//Death stop, run ai again
 }
