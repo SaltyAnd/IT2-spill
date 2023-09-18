@@ -12,6 +12,9 @@ function epleflytt() {
 	eple.style.top = Math.floor(Math.random()*(innerHeight - 200)) + 50 +"px";
 }
 
+function speed() {
+	
+}
 
 function AI_difficulty(current_points, max_time_delay){
 	//Difficulty level: 0 = Easy |  1 = Normal | 2 = Hard | 3 = Unplayeable
