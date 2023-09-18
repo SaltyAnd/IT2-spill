@@ -1,6 +1,6 @@
 body {
 	background-color:lightblue;
-	background-image: url(himmel.webp);
+	background-image: url(./assets/images/static/himmel.webp);
 	background-size: cover;
 }
 #eple {
