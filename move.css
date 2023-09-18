@@ -18,18 +18,23 @@ body {
 	0% {
 		filter:hue-rotate(0deg);
 	}
-	25%{
+	15%{
 		transform:translate(20px,20px);
 		filter:hue-rotate(270deg);		
 	}
-	30%{
+	20%{
 		transform:translate(+40px, -40px);
 	}
-	50% {
+	30% {
 		transform:translate(-40px, 20px);
 		filter:hue-rotate(365deg);		
 	}
+	35%{	
+		opacity:0%;
+
+	}
 	100%{
+		opacity:100%; 
 		filter:hue-rotate(0deg);		
 	}
 }

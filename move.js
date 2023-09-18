@@ -25,7 +25,9 @@ function testmove(hendelse){
 		case 9:
 			nullstill();
 			break;
-		}
+		
+
+		}  
 	}
 function moveleft() {
 	element.style.transform = "scaleX(-1)";
