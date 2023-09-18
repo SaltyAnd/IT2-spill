@@ -30,23 +30,22 @@ function testmove(hendelse){
 	}
 function moveleft() {
 	element.style.transform = "scaleX(-1)";
-	element.style.left = parseInt(element.style.left)-10+"px";
-
+	element.style.left = parseInt(element.style.left)-(10*(poengsum/2))+"px";
 }
 
 function moveup() {
 	element.style.transform = "rotate(270deg)";
-	element.style.top = parseInt(element.style.top)-10+"px";
+	element.style.top = parseInt(element.style.top)-(10*(poengsum/2))+"px";
 }
 
 function moveright() {
 	element.style.transform = "rotate(0deg)";
-	element.style.left = parseInt(element.style.left)+10+"px";
+	element.style.left = parseInt(element.style.left)+(10*(poengsum/2))+"px";
 }
 
 function movedown() {
 	element.style.transform = "rotate(90deg)";
-	element.style.top = parseInt(element.style.top)+10+"px";
+	element.style.top = parseInt(element.style.top)+(10*(poengsum/2))+"px";
 }
 
 function testtreff() {
