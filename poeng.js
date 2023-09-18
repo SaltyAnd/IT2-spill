@@ -49,7 +49,7 @@ function death(){
 	const apple_style = document.getElementById('eple');
 	apple_style.style.cssText += 'animation-name: hpdown; animation-duration:'+ death_animation_time/1000 +'s; animation-iteration-count: 1; transition: 0s';
 	eple.style.left = Math.floor(Math.random()*(innerWidth - 200)) + 50 +"px";
-	eple.style.top = Math.floor(Math.random()*(innerHeight - 200)) + 150 +"px";	
+	eple.style.top = Math.floor(Math.random()*(innerHeight - 200)) + 100 +"px";	
 	
 }
 function reincarnation(){
