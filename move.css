@@ -10,6 +10,7 @@ body {
 	width: 100px;
 	height: 100px;
 	transition: 0.5s;
+	z-index:22; 
 }
 
 /*Death hanimation*/
@@ -36,12 +37,13 @@ body {
 /*Death hanimation*/
 
 
-#fly {
-	transition: 0.002s;
+#fly{
+	z-index:20;
 }
 #poengvisning {
 	position: absolute;
 	top: 2vh;
 	left: 50vw;
 	font-size: 5vw;
+	z-index:18;
 }

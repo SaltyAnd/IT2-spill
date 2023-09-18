@@ -13,19 +13,7 @@ function treff(){
 	epleposX = parseInt(eple.style.left);
 	epleposY = parseInt(eple.style.top);
 
-	/*
-	flyposX = flyposX.slice(0,2);
-	flyposX = Number(flyposX);
-	flyposY = flyposY.slice(0,2);
-	flyposY = Number(flyposY);
-
-	epleposX = epleposX.slice(0,2);
-	epleposX = Number(epleposX);
-	epleposY = epleposY.slice(0,2);
-	epleposY = Number(epleposY);
-	*/
-
-	if(flyposX + 40 >= epleposX && flyposX <= (epleposX+100) && 
+	if(flyposX + 80 >= epleposX && flyposX <= (epleposX+100) && 
 	flyposY + 40 >= epleposY && flyposY <= (epleposY+100)) {
 		poengsum++;
 		document.getElementById("poengvisning").innerHTML = poengsum;
@@ -49,7 +37,7 @@ function death(){
 	const apple_style = document.getElementById('eple');
 	apple_style.style.cssText += 'animation-name: hpdown; animation-duration:'+ death_animation_time/1000 +'s; animation-iteration-count: 1; transition: 0s';
 	eple.style.left = Math.floor(Math.random()*(innerWidth - 200)) + 50 +"px";
-	eple.style.top = Math.floor(Math.random()*(innerHeight - 200)) + 100 +"px";	
+	eple.style.top = Math.floor(Math.random()*(innerHeight - 200)) + 50 +"px";	
 	
 }
 function reincarnation(){

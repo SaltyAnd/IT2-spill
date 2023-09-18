@@ -24,8 +24,7 @@ function testmove(hendelse){
 			break;
 		case 9:
 			nullstill();
-			break;
-		
+			break;	
 
 		}  
 	}
